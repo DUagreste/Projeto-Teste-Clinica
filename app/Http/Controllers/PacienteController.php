@@ -43,7 +43,7 @@ class PacienteController extends Controller
                 'paciente' => $paciente,
                 'ordems' => $paciente->ordems
             ];
-            return $response;
+            return $paciente;
         }
 
         return response()->json([
